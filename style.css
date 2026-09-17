@@ -118,3 +118,9 @@ table th[scope="row"], table th:first-child { text-align: left !important; }
 .demo-prev { left: 0; } .demo-next { right: 0; }
 .demo-arrow:hover { background: #edf3ff; }
 @media(max-width:640px) { .demo-section { padding-top: 8px; } .demo-carousel { padding: 0; padding-bottom: 48px; } .demo-arrow { top: auto; bottom: 0; transform: none; } .demo-prev { left: calc(50% - 46px); } .demo-next { right: calc(50% - 46px); } .demo-selector { gap: 6px; } .demo-selector button { font-size: 12px; padding: 7px 10px; } .demo-case figcaption { min-height: 116px; } }
+
+/* Original paper tables, rendered at 300 dpi. */
+.table-figure { padding: 12px; }
+.table-figure-narrow { max-width: 660px; margin-inline: auto; }
+.table-figure figcaption { margin-top: 12px; text-align: center; color: #626b7a; font-size: 12px; }
+@media(max-width:640px) { .table-figure { padding: 5px; } }
