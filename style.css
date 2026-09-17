@@ -1,0 +1,120 @@
+/* Local additions to the original Earth-Agent template. */
+html { scroll-padding-top: 24px; }
+.publication-title { font-family: Inter, 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif !important; }
+.author-name { color: var(--primary-color); font-weight: 600; }
+.author-block { margin-right: .4rem; }
+.affiliations { font-size: 1.05rem !important; line-height: 1.8; }
+sup { font-size: .65em; }
+.publication-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
+.pending { margin: 8px 4px; cursor: default; }
+.pending small { font-size: .65rem; font-weight: 400; margin-left: 9px; opacity: .8; }
+.pending:hover { transform: none !important; background: var(--text-primary) !important; }
+.section-icon { display: inline-block; width: 44px; height: 44px; object-fit: contain; vertical-align: middle; margin-right: 6px; }
+.paper-figure { margin: 0 0 2rem; }
+.paper-figure a { display: block; cursor: zoom-in; }
+.paper-figure img { display: block; width: 100%; height: auto; }
+#cases .paper-figure { margin-bottom: 0; }
+.result-tabs { display: flex; justify-content: center; border-bottom: 1px solid var(--border-color); margin-bottom: 2rem; }
+.result-tabs button { border: none; background: none; padding: 12px 16px; font: inherit; color: var(--text-secondary); border-bottom: 2px solid transparent; cursor: pointer; }
+.result-tabs button[aria-selected=true] { color: var(--primary-color); border-bottom-color: var(--primary-color); }
+.result-intro h3 { font-size: 1.35rem; font-weight: 600; margin-bottom: .6rem; }
+.result-intro p { color: var(--text-secondary); margin-bottom: 1.5rem; }
+.table-scroll { overflow: auto; max-width: 100%; }
+table { width: 100%; border-collapse: collapse; font-size: .8rem; white-space: nowrap; text-align: right; }
+caption { text-align: left; font-weight: 600; margin-bottom: 1rem; }
+th,td { padding: 12px 10px; border-bottom: 1px solid var(--border-color); }
+th:first-child { text-align: left; }
+thead { background: var(--background-accent); }
+.ours { background: #edf3ff; }
+.table-note { font-size: .85rem; margin-top: 1rem; color: var(--text-secondary); }
+.metric-key { margin-top: 1.5rem; }
+summary { cursor: pointer; font-weight: 600; }
+.metric-key p { margin-top: .7rem; font-size: .9rem; }
+#copy-status { min-height: 24px; font-size: .85rem; margin-top: .5rem; }
+[hidden] { display: none !important; }
+dialog { width: min(1400px,96vw); max-height: 94vh; border: 0; border-radius: 12px; padding: 20px; margin: auto; }
+dialog::backdrop { background: #16192cdd; }
+.dialog-toolbar { display: flex; align-items: center; gap: 20px; position: sticky; top: -20px; background: white; padding: 8px 0 18px; font-size: 12px; }
+.dialog-toolbar>a { margin-left: auto; }
+.dialog-toolbar button { border: 0; height: 32px; width: 32px; cursor: pointer; }
+#enlarged-figure { display: block; width: 100%; height: auto; }
+.skip { position: fixed; top: -100px; left: 20px; background: white; z-index: 100; padding: 10px; }
+.skip:focus { top: 10px; }
+button:focus-visible,summary:focus-visible,[tabindex]:focus-visible { outline: 2px solid var(--primary-color); outline-offset: 3px; }
+@media(max-width: 640px) {
+ .section { padding: 2.5rem 1.1rem; }
+ .publication-links { gap: 4px; }
+ .publication-links .link-block { display: inline-block; }
+ .pending { margin: 4px !important; }
+ .result-tabs button { font-size: .8rem; padding: 10px; }
+ .title.is-3 { font-size: 1.65rem; }
+ .section-icon { width: 34px; height: 34px; }
+ .affiliations { font-size: .9rem !important; }
+ .content.has-text-justified { text-align: left !important; }
+}
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior: auto; } .hero,.section { animation: none; } }
+/* Refined academic layout, retaining the Earth-Agent template. */
+:root { --text-primary: #202735; --text-secondary: #505968; --background-secondary: #f7f9fc; }
+.masthead-logo { display: block; width: 60px; height: 60px; object-fit: contain; margin: 0 auto 22px; }
+.hero-body { padding: 48px 24px 24px; }
+.publication-title { font-size: 2.8rem !important; line-height: 1.16 !important; letter-spacing: -.025em; max-width: 1000px; margin-inline: auto; }
+.publication-authors { max-width: 860px; margin-inline: auto; line-height: 1.85; }
+.author-block { margin-right: .55rem; }
+.affiliations { max-width: 890px; font-size: .96rem !important; color: #505968; }
+.section-nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 24px; padding: 12px 20px 26px; font-size: 14px; }
+.section-nav a { color: #626b7a; }
+.section-nav a:hover { color: #2563eb; }
+.section { padding-top: 64px; padding-bottom: 64px; }
+.container.is-max-desktop { max-width: 1060px; }
+.section-kicker { text-align: center; font-size: 11px; letter-spacing: .15em; color: #6e83a4; margin-bottom: 12px; font-weight: 600; }
+.title.is-3 { font-size: 30px; letter-spacing: -.02em; padding-bottom: 16px; line-height: 1.3; }
+.title.is-3::after { background: #8faada; height: 2px; width: 44px; }
+.content.has-text-justified { text-align: left !important; font-size: 16px; line-height: 1.85; color: #505968; max-width: 970px; margin: 24px auto 0; }
+.content strong { color: #243955; }
+.content li { margin-top: 10px; }
+.paper-figure { margin: 25px 0 30px; padding: 18px; background: white; border: 1px solid #e8edf4; border-radius: 8px; }
+#cases .paper-figure { padding: 0; border: 0; background: transparent; }
+.table-scroll { margin: 24px 0; border: 1px solid #dfe5ed; border-radius: 8px; background: white; }
+table { font-size: 13px; font-variant-numeric: tabular-nums; }
+caption { padding: 16px 18px; margin: 0; font-size: 13px; color: #43536b; border-bottom: 1px solid #dfe5ed; }
+th,td { padding: 12px 11px; }
+thead th { font-size: 11px; color: #617189; }
+tbody th { font-weight: 500; }
+tbody tr:nth-child(even):not(.ours) { background: #fafbfd; }
+tbody tr.ours { color: #254981; background: #eef4ff; }
+tbody tr:last-child>* { border-bottom: 0; }
+.result-intro { margin-top: 28px; }
+.hero,.section { animation: none; }
+@media(max-width:640px) {
+ .publication-title { font-size: 30px !important; }
+ .hero-body { padding: 28px 18px 16px; }
+ .masthead-logo { width: 48px; height: 48px; margin-bottom: 18px; }
+ .section { padding: 42px 18px; }
+ .title.is-3 { font-size: 25px; }
+ .section-nav { gap: 12px 20px; font-size: 12px; }
+ .content.has-text-justified { font-size: 15px; }
+ .paper-figure { padding: 8px; }
+}
+table th[scope="row"], table th:first-child { text-align: left !important; }
+@media(min-width:1000px) { .table-scroll table { min-width: 100%; } }
+/* Keep wide tables within their scroll region inside Bulma's flex columns. */
+.section > .container { width: 100%; }
+.section .column { min-width: 0; }
+.table-scroll { width: 100%; }
+.section.hero > .container { flex: none; min-width: 0; width: 100%; max-width: 1060px; }
+/* Case videos follow the original Earth-Agent hero carousel. */
+.demo-section { padding-top: 12px; padding-bottom: 48px; }
+.demo-selector { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.demo-selector button { font: inherit; font-size: 13px; padding: 8px 13px; border: 1px solid #dfe5ed; border-radius: 20px; background: white; color: #505968; cursor: pointer; }
+.demo-selector button[aria-pressed="true"] { background: #243955; border-color: #243955; color: white; }
+.demo-carousel { position: relative; padding: 0 48px; }
+.demo-stage { max-width: 880px; margin: auto; }
+.demo-case { margin: 0; }
+.demo-case video { display: block; width: 100%; height: auto; aspect-ratio: 6/5; background: #f3faf4; border: 1px solid #dfe5ed; border-radius: 12px; }
+.demo-case figcaption { text-align: center; padding: 18px 8px 0; min-height: 94px; }
+.demo-case h3 { font-size: 19px; font-weight: 600; color: #243955; margin-bottom: 6px; }
+.demo-case p { font-size: 14px; line-height: 1.6; color: #505968; margin: 0; }
+.demo-arrow { position: absolute; top: calc((100% - 94px)/2); transform: translateY(-50%); width: 38px; height: 38px; border: 1px solid #dfe5ed; border-radius: 50%; background: white; color: #243955; font-size: 28px; line-height: 1; cursor: pointer; }
+.demo-prev { left: 0; } .demo-next { right: 0; }
+.demo-arrow:hover { background: #edf3ff; }
+@media(max-width:640px) { .demo-section { padding-top: 8px; } .demo-carousel { padding: 0; padding-bottom: 48px; } .demo-arrow { top: auto; bottom: 0; transform: none; } .demo-prev { left: calc(50% - 46px); } .demo-next { right: calc(50% - 46px); } .demo-selector { gap: 6px; } .demo-selector button { font-size: 12px; padding: 7px 10px; } .demo-case figcaption { min-height: 116px; } }
