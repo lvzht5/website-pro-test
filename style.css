@@ -144,7 +144,7 @@ table th[scope="row"], table th:first-child { text-align: left !important; }
 }
 
 /* Evaluation regimes: explanation beside the comparison chart. */
-.regimes-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.8fr); gap: 36px; align-items: center; margin-top: 28px; }
+.regimes-layout { display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr); gap: 36px; align-items: center; margin-top: 28px; }
 .regimes-layout .content { margin: 0; font-size: 15px; line-height: 1.8; }
 .regimes-layout .paper-figure { margin: 0; padding: 12px; }
 @media(max-width:800px) { .regimes-layout { grid-template-columns: 1fr; gap: 24px; } }
